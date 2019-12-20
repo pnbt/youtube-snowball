@@ -2,6 +2,7 @@
 
 From a given set of channel, snowballs to add channels recommended from these.
 For each channel, the program will look at the 20 recommendations from the last video from this channel.
+It will do that for all channels provided. Thereafter, it will look at which channel was recommended the most time, and add it to the initial list of channels, until it reaches the speficied number of channels.
 
 ### Install dependences
 
@@ -21,10 +22,15 @@ It must be kept in the root folder.
 ### Example use:
 
 python3.5 youtube-snowball.py --set=us
+python3.5 youtube-snowball.py --set=fr
 
 ### Required argument:
 
-  --set The starting set of channels. This is defined in the main function. For instance 'us' or 'fr'. Each set has to be defined in the main function.
+  --set The starting set of channels. This is defined in the main function.
+
+For instance two sets are pre-defined: 'us' or 'fr'. They were both set up to contain information channels.
+
+New sets can be defined in the main function of the program.
 
 ### Creating new sets of initial channels:
 
